@@ -31,7 +31,9 @@ int main(){
     printf("Questo programma chiede una sequenza di valutazioni da 18 a 30, e ne stampa il massimo");
     printf("il minimo e la media.\nL'input dell'utente termina con l'inserimento di un valore non valido\n");
 
+    //corpo centrale del programma
     do{
+        //input utente
         printf("Inserire un valore tra 18 e 30: ");
         scanf("%d",&input);
         if (max == 0 && min == 0){          //se mi trovo al primo valore inserito dall'utente
