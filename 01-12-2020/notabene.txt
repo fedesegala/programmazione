@@ -1,9 +1,0 @@
-La matrice trasposta è la matrice che ha le righe che
-diventano colonne e viceversa 
-
-riga 1 = colonna 1, colonna 1 = riga 1
-riga 2 = colonna 2; colonna 2 = riga 2
-
-Non deve necessariamente essere quadrata
-
-date r e c valide, calcola la somma della sottomatrice con angolo sinistro alco r,c 
