@@ -2,40 +2,32 @@
 Scrivere un programma che calcoli quanti elementi in una matrice occorrono almeno due volte 
 */
 
-#include <stdio.h>
-#define R 3 
-#define C 3
+//da vedere 
 
+#include <stdio.h>
+#define R 4
+#define C 3
+#define LENGTH 256
 void main(){
     int conteggio = 0;
-    int m[R][C] = {
-        {1,2,4},
-        {3,5,6},
-        {1,1,2}
-    };
+    int conteggio_caratteri[LENGTH] = {0};
+    char matrice[R][C] = {
+        {'1','a','c'},
+        {'a','b','d'},
+        {'A','2','5'},
+        {'1','2','7'}
+    }; 
 
-    int checked [R*C/2];
-    
     for (int i = 0; i<R; i++){
         for (int j = 0; j<C; j++){
-            int key = m[i][j]; 
-            for (int k = 0; k<R; k++){
-                for (int f = 0; f<C; f++){
-                    if (m[k][f] == key){
-                        int trovaChecked = 0;
-                        for (int b = 0; b<R*C/2; b++){
-                            if (checked[b] == key){
-                                trovaChecked = 1;
-                            }
-                        }
-                        if(!trovaChecked){
-                            conteggio ++;
-                            checked[conteggio] = m[i][j];
-                        }                        
-                    }
-                }
-            }
+            conteggio_caratteri[matrice[i][j]]++;
         }
-    } 
-    printf("%d",conteggio);   
+    }
+
+    for (int i = 0; i<LENGTH; i++){
+        if (conteggio_caratteri[i] > 1)
+            conteggio++;
+    }
+
+    printf("Ci sono %d valori duplicati\n",conteggio);
 }
