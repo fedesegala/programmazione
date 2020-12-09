@@ -1,0 +1,18 @@
+Da oggi abbiamo la necessità di riscrivere il nostro codice 
+in maniera più strutturata 
+                                                          (N)   
+ad esempio se dovessi calcolare il numero di combinazioni (K)
+dovrei calcolare (N!/K!(n-k)!)
+
+Per fare ciò dovrei scrivere di fatto 3 cicli for, scrivendo la stessa cosa.
+
+Per evitare ciò posso creare un sotto programma (funzioni) che svolga un qualché attività 
+Il programma principale si limiterà ad invocare un le funzioni 
+
+dobbiamo dargli un nome: tipo_restituzione nome(parametri di funzionamento[con tipo dei parametri])
+
+int fattoriale(int n){
+    //dichiarativa locale al sottoprogramma
+}
+
+La n prende il nome di parametro formale, è quello che mi serve per descrivere il mio algoritmo
