@@ -1,0 +1,33 @@
+/*
+Si scriva un programma che data una matrice quadrata riempita di soli 0 e 1 stampi: 
+
+    - il numero di sequenze di 1 contenute complessivamente nelle righe della matrice
+    - la lunghezza della sequenza di 1 più lunga 
+    - la lunghezza della sequenza di 1 più corta 
+*/
+
+#include <stdio.h>
+#define D 5
+
+void main(){
+    int matrice[D][D] = {
+        {0,1,1,1,1},
+        {1,1,0,1,1},
+        {1,1,0,1,1},
+        {1,1,0,1,1},
+        {0,1,1,1,0}
+    };
+
+    int n_sequenze = 0; 
+    int max_sequenza = 1;
+    int min_sequenza = D; 
+
+    for (int i = 0; i<D; i++){
+	for (int j = 0; j<D; j++){
+		in
+	}
+    }
+
+    printf("Il numero di sequenze nelle righe è %d\n",n_sequenze);
+    printf("La più piccola sequenza di 1 è lunga %d, mentre la più lunga è di lunghezza %d\n", min_sequenza, max_sequenza);
+}
